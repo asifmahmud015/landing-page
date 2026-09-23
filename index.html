@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyLink Reservations | Flight Booking Assistance</title>
+  <meta name="description" content="SkyLink Reservations — friendly 24/7 help with flight bookings, date changes, cancellations and refund questions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-icon">✈</span>
+        <span class="brand-name">SkyLink<em>Reservations</em></span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#services">Services</a>
+        <a href="#airlines">Airlines</a>
+        <a href="#deals">Flight Deals</a>
+        <a href="#support">Support</a>
+      </nav>
+      <a class="btn btn-call header-call" href="tel:+18005550137">
+        <span class="pulse-dot"></span> Call (800) 555-0137
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">🎧 Live Travel Assistance · 24/7</p>
+        <h1>Need to Book a Flight?<br /><span>Talk to a Real Travel Specialist</span></h1>
+        <p class="hero-sub">
+          Instant help with new reservations, date changes, cancellations and refund
+          questions — one call, no queues, no confusion.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-call btn-lg" href="tel:+18005550137">
+            <span class="pulse-dot"></span> Call Now · (800) 555-0137
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#services">Explore Services</a>
+        </div>
+        <p class="wait-time">Current wait time: <strong>under 10 seconds</strong></p>
+        <ul class="hero-chips">
+          <li>✈ New Bookings</li>
+          <li>▣ Cancellations</li>
+          <li>↩ Date Changes</li>
+          <li>ⓢ Refund Help</li>
+        </ul>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-head">
+          <span class="live-badge"><span class="pulse-dot"></span> AGENTS ONLINE</span>
+          <h3>Quick Callback</h3>
+        </div>
+        <form id="callbackForm" class="callback-form" novalidate>
+          <label>
+            Your Name
+            <input type="text" name="name" placeholder="Jane Doe" required />
+          </label>
+          <label>
+            Phone Number
+            <input type="tel" name="phone" placeholder="(800) 555-0137" required />
+          </label>
+          <label>
+            I need help with…
+            <select name="topic" required>
+              <option value="">Choose a topic…</option>
+              <option>New booking</option>
+              <option>Change my dates</option>
+              <option>Cancel a flight</option>
+              <option>Refund status</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn-call btn-block">Request Callback</button>
+          <p class="form-note" id="formNote">We usually call back within 60 seconds.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Trust bar ===== -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item"><strong>60s</strong><span>avg. connect time</span></div>
+      <div class="trust-item"><strong>24/7</strong><span>live specialists</span></div>
+      <div class="trust-item"><strong>100%</strong><span>secure &amp; confidential</span></div>
+      <div class="trust-item"><strong>500+</strong><span>airlines supported</span></div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="section" id="services">
+    <div class="container">
+      <p class="eyebrow center">What we do</p>
+      <h2 class="section-title">Fast, Secure &amp; Genuinely Helpful Travel Support</h2>
+      <p class="section-sub">One desk for everything flight-related — so you never have to dig through airline phone trees again.</p>
+      <div class="card-grid">
+        <article class="feature-card">
+          <div class="icon-ring">🎫</div>
+          <span class="card-num">01</span>
+          <h3>Best-Price Guidance</h3>
+          <p>Specialists compare fares across hundreds of routes and airlines to help you lock in a fair deal.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon-ring">🎧</div>
+          <span class="card-num">02</span>
+          <h3>Excellent Customer Care</h3>
+          <p>Date changes, cancellations and rebooking handled for you — clearly explained, patiently done.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon-ring">🔒</div>
+          <span class="card-num">03</span>
+          <h3>Secure Handling</h3>
+          <p>Your personal details and payment info are treated with strict confidentiality on every call.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Airlines ===== -->
+  <section class="section section-alt" id="airlines">
+    <div class="container">
+      <p class="eyebrow center">Coverage</p>
+      <h2 class="section-title">Airlines We Assist With Every Day</h2>
+      <p class="section-sub">Our specialists help travelers on all major U.S. and international carriers.</p>
+      <div class="airline-grid">
+        <div class="airline-item"><span class="airline-num">01</span> Delta Airlines <span class="plane">✈</span></div>
+        <div class="airline-item"><span class="airline-num">02</span> United Airlines <span class="plane">✈</span></div>
+        <div class="airline-item"><span class="airline-num">03</span> American Airlines <span class="plane">✈</span></div>
+        <div class="airline-item"><span class="airline-num">04</span> Southwest Airlines <span class="plane">✈</span></div>
+        <div class="airline-item"><span class="airline-num">05</span> JetBlue Airways <span class="plane">✈</span></div>
+        <div class="airline-item"><span class="airline-num">06</span> Alaska Airlines <span class="plane">✈</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Reservation desk ===== -->
+  <section class="section" id="support">
+    <div class="container desk-grid">
+      <div class="desk-copy">
+        <p class="eyebrow">🎧 Live Travel Assistance</p>
+        <h2 class="section-title left">Our Reservations Desk</h2>
+        <p>
+          SkyLink connects travelers with friendly flight-support specialists who can help with
+          bookings, schedule changes, cancellations and refund questions — cutting through the
+          fine print so travel planning feels simple again.
+        </p>
+        <ul class="check-list">
+          <li>✓ Seamless new bookings across 500+ airlines</li>
+          <li>✓ Same-day date and time changes</li>
+          <li>✓ Cancellations and refund-status follow-ups</li>
+          <li>✓ Emergency rebooking when plans go sideways</li>
+        </ul>
+        <a class="btn btn-call btn-lg" href="tel:+18005550137">
+          <span class="pulse-dot"></span> Call (800) 555-0137
+        </a>
+      </div>
+      <div class="desk-badge">
+        <div class="badge-circle">
+          <span class="badge-headset">🎧</span>
+          <strong>24/7</strong>
+          <span>Travel Support</span>
+        </div>
+        <div class="badge-tag">INSTANT CONNECTION — ZERO WAITING</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Deals ===== -->
+  <section class="section section-alt" id="deals">
+    <div class="container">
+      <p class="eyebrow center">✈ Flight Deals</p>
+      <h2 class="section-title">Discover Fare Deals With Real-Time Help</h2>
+      <p class="section-sub">Ask a specialist to hunt down current fare drops and partner offers on your route.</p>
+      <div class="deal-grid">
+        <article class="deal-card">
+          <div class="deal-route">New York <span>⇄</span> Miami</div>
+          <div class="deal-price"><sup>$</sup>89<sup>*</sup></div>
+          <p class="deal-note">One-way · Economy · select dates</p>
+          <a class="btn btn-ghost" href="tel:+18005550137">Ask About This Fare</a>
+        </article>
+        <article class="deal-card">
+          <div class="deal-route">Los Angeles <span>⇄</span> Las Vegas</div>
+          <div class="deal-price"><sup>$</sup>59<sup>*</sup></div>
+          <p class="deal-note">One-way · Economy · midweek</p>
+          <a class="btn btn-ghost" href="tel:+18005550137">Ask About This Fare</a>
+        </article>
+        <article class="deal-card">
+          <div class="deal-route">Chicago <span>⇄</span> Orlando</div>
+          <div class="deal-price"><sup>$</sup>79<sup>*</sup></div>
+          <p class="deal-note">One-way · Economy · advance purchase</p>
+          <a class="btn btn-ghost" href="tel:+18005550137">Ask About This Fare</a>
+        </article>
+      </div>
+      <p class="deal-disclaimer">*Sample indicative fares for demonstration. Actual prices vary by date, airline and availability.</p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-icon">✈</span>
+          <span class="brand-name">SkyLink<em>Reservations</em></span>
+        </a>
+        <p class="footer-call">Instant connection · Direct support</p>
+        <a class="footer-phone" href="tel:+18005550137">(800) 555-0137</a>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#airlines">Airlines</a>
+        <a href="#deals">Deals</a>
+        <a href="#support">Support</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </div>
+    </div>
+    <div class="container footer-disclaimer">
+      <h4>Disclaimer</h4>
+      <p>
+        SkyLink Reservations is an independent travel-assistance service and may help users with
+        booking-related support across various travel providers. We do not own, operate, manage or
+        control any airline or travel supplier. All bookings, changes, cancellations and refunds remain
+        subject to the rules, terms and conditions of the relevant airline or service provider. Travelers
+        should review all fare rules and provider policies before confirming any travel service.
+      </p>
+      <p class="footer-copy">© <span id="year"></span> SkyLink Reservations. Demo template — all names, numbers and fares are fictional.</p>
+    </div>
+    
+  </footer>
+
+  <!-- Floating call button (mobile) -->
+  <a class="float-call" href="tel:+18005550137" aria-label="Call now">📞</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
