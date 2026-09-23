@@ -282,6 +282,17 @@ h1,h2,h3,h4{font-family:'Sora',sans-serif;line-height:1.2}
 .footer-disclaimer p{font-size:.82rem;opacity:.75;max-width:62rem}
 .footer-copy{margin-top:1.4rem;opacity:.55}
 
+/* ---------- Footer simplified variant for terms.html (when only copyright exists) ---------- */
+.site-footer:has(> .container.footer-disclaimer:only-child){
+  padding:2rem 0
+}
+.site-footer:has(> .container.footer-disclaimer:only-child) .footer-disclaimer{
+  padding:0;text-align:center
+}
+.site-footer:has(> .container.footer-disclaimer:only-child) .footer-copy{
+  margin:0;opacity:.65;font-size:.9rem;text-align:center;width:100%
+}
+
 /* ---------- Floating call button ---------- */
 .float-call{
   display:none;position:fixed;right:1.1rem;bottom:1.1rem;z-index:60;
@@ -328,3 +339,13 @@ h1,h2,h3,h4{font-family:'Sora',sans-serif;line-height:1.2}
 .legal-page h2{color:var(--navy);font-size:1.15rem;margin:2rem 0 .6rem}
 .legal-page p{color:var(--muted);margin-bottom:.8rem}
 .legal-note{margin-top:2.5rem;font-size:.85rem}
+
+/* Terms page header fix - keep Back to Home visible */
+.legal-page ~ .site-footer,
+body:has(.legal-page) .site-header .header-call{
+  display:inline-flex !important;
+}
+
+/* terms-header-fix: Keep Back to Home visible on terms.html even on mobile */
+body:has(.legal-page) .header-inner{justify-content:space-between}
+body:has(.legal-page) .site-header .header-call{display:inline-flex !important}
